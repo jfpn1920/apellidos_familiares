@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6f2;
+    color: #222222;
+}
+/* Encabezado verde con el título */
+header {
+    background-color: #2e7d5b;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+}
+/* Título principal */
+h1 {
+    margin: 0 0 8px 0;
+    font-size: 32px;
+}
+/* Texto debajo del título */
+header p {
+    margin: 0;
+}
+/* Contenido principal centrado */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 16px;
+}
+/* Cada sección es una caja blanca */
+.caja {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+/* Títulos de las secciones */
+h2 {
+    margin-top: 0;
+    color: #2e7d5b;
+}
+/* Etiquetas de los campos */
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+/* Campos de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Texto de ayuda y total */
+.ayuda, .contador {
+    color: #555555;
+    font-size: 14px;
+}
+/* Avisos de error */
+.mensaje {
+    color: #c0392b;
+    min-height: 20px;
+}
+/* Botones */
+button {
+    padding: 8px 16px;
+    background-color: #2e7d5b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* Botón rojo (borrar todos) */
+.rojo {
+    background-color: #c0392b;
+}
+/* Botón cuando el mouse pasa por encima */
+button:hover {
+    opacity: 0.85;
+}
+/* Fila con los botones de la lista */
+.botones {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+/* Lista de apellidos sin viñetas */
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* Cada apellido: texto a la izquierda y botón X a la derecha */
+.lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    background-color: #eaf4ee;
+    border-radius: 4px;
+}
+/* Botón X pequeño y rojo dentro de la lista */
+.lista button {
+    background-color: #c0392b;
+    padding: 4px 10px;
+}

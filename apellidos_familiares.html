@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apellidos familiares</title>
+    <link rel="stylesheet" href="apellidos_familiares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="apellidos_familiares.js" defer></script>
+</head>
+<body>
+    <!----------------------------------------->
+    <!--|estructuracion_apellidos_familiares|-->
+    <!----------------------------------------->
+    <header>
+        <h1>Apellidos Familiares</h1>
+        <p>Escribe los apellidos de tu familia y míralos en la lista.</p>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección 1: campo para introducir un apellido -->
+        <section class="caja">
+            <h2>Agregar apellido</h2>
+            <!-- Etiqueta del campo -->
+            <label for="apellido">Apellido</label>
+            <!-- Campo de texto donde se escribe el apellido -->
+            <input type="text" id="apellido" placeholder="Ejemplo: Rodríguez">
+            <!-- Ayuda sobre cómo escribir varios apellidos -->
+            <p class="ayuda">Puedes escribir varios separados por coma: Pérez, Gómez.</p>
+            <!-- Aquí se escriben los avisos (por ejemplo, si el apellido ya existe) -->
+            <p id="mensaje" class="mensaje"></p>
+            <!-- Botón para agregar el apellido a la lista -->
+            <button id="agregar" type="button">Agregar apellido</button>
+        </section>
+        <!-- Sección 2: apellidos guardados -->
+        <section class="caja">
+            <h2>Apellidos de la familia</h2>
+            <!-- Etiqueta del buscador -->
+            <label for="buscar">Buscar apellido</label>
+            <!-- Cuadro para filtrar la lista mientras se escribe -->
+            <input type="text" id="buscar" placeholder="Escribe para buscar">
+            <!-- Total de apellidos (lo escribe JavaScript) -->
+            <p id="contador" class="contador"></p>
+            <!-- Texto que se ve cuando la lista está vacía -->
+            <p id="vacio">Todavía no hay apellidos en la lista.</p>
+            <!-- Aquí JavaScript coloca los apellidos -->
+            <ul id="lista" class="lista"></ul>
+            <!-- Botones de la lista -->
+            <div class="botones">
+                <!-- Ordena los apellidos de la A a la Z -->
+                <button id="ordenar" type="button">Ordenar de A a Z</button>
+                <!-- Borra todos los apellidos -->
+                <button id="borrar-todo" type="button" class="rojo">Borrar todos</button>
+            </div>
+        </section>
+        <!-- Sección 3: instrucciones de uso -->
+        <section class="caja">
+            <h2>Cómo usar</h2>
+            <!-- Pasos numerados -->
+            <ol>
+                <li>Escribe un apellido en el campo.</li>
+                <li>Pulsa "Agregar apellido" o la tecla Enter.</li>
+                <li>Usa la X para quitar un apellido.</li>
+                <li>Los datos se guardan solos en este navegador.</li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
